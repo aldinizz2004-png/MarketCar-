@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MarketCar - منصة سيارات تجريبية متكاملة مع خدمة MiroTalk للتواصل المباشر مع البائع." />
+  <title>MarketCar | سوق السيارات الذكي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="MarketCar">
+        <span class="brand-mark">MC</span>
+        <span>
+          <strong>MarketCar</strong>
+          <small>بيع وشراء السيارات بسهولة</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">الرئيسية</a>
+        <a href="#cars">السيارات</a>
+        <a href="#how">كيف تعمل؟</a>
+        <a href="#about">عن المنصة</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">منصة سيارات تجريبية متكاملة مع الاتصال المرئي</span>
+          <h1>اختَر سيارتك وتواصل مع البائع مباشرةً</h1>
+          <p>
+            تصفّح السيارات المتاحة، قارن الأسعار والمواصفات، ثم افتح اجتماع فيديو آمن مع البائع
+            عبر خدمة MiroTalk المستضافة ذاتيًا.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cars">تصفّح السيارات</a>
+            <a class="btn btn-secondary" href="#how">كيف تعمل المنصة؟</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>6</strong><span>سيارات متاحة</span></div>
+            <div><strong>24/7</strong><span>خدمة اتصال</span></div>
+            <div><strong>HTTPS</strong><span>اتصال آمن</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="assets/hero-car.svg" alt="سيارة حديثة" />
+          <div class="hero-badge">
+            <span>اتصال مباشر</span>
+            <strong>Video Meeting</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters-section" id="cars">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">السيارات المتاحة</span>
+            <h2>اختر السيارة المناسبة لك</h2>
+          </div>
+          <p>الأسعار والمواصفات تجريبية لأغراض عرض مشروع Network Programming.</p>
+        </div>
+
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="ابحث عن سيارة أو موديل..." aria-label="بحث" />
+          <select id="brandFilter" aria-label="فلترة حسب الماركة">
+            <option value="all">كل الماركات</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Kia">Kia</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="BMW">BMW</option>
+            <option value="Volkswagen">Volkswagen</option>
+          </select>
+          <select id="priceFilter" aria-label="فلترة حسب السعر">
+            <option value="all">كل الأسعار</option>
+            <option value="under60">أقل من 60,000 ₪</option>
+            <option value="60to100">من 60,000 إلى 100,000 ₪</option>
+            <option value="over100">أكثر من 100,000 ₪</option>
+          </select>
+        </div>
+
+        <div class="cars-grid" id="carsGrid"></div>
+        <p class="empty-state" id="emptyState">لا توجد سيارات مطابقة للبحث.</p>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="container">
+        <div class="section-heading center">
+          <div>
+            <span class="eyebrow">خطوات بسيطة</span>
+            <h2>كيف تعمل المنصة؟</h2>
+          </div>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span>01</span>
+            <h3>اختيار السيارة</h3>
+            <p>تصفّح السيارات والمواصفات والأسعار المتاحة.</p>
+          </article>
+          <article class="step-card">
+            <span>02</span>
+            <h3>بدء التواصل</h3>
+            <p>اضغط زر “تواصل مع البائع” من بطاقة السيارة.</p>
+          </article>
+          <article class="step-card">
+            <span>03</span>
+            <h3>فتح MiroTalk</h3>
+            <p>يتم فتح غرفة خاصة بالسيارة على خادم MiroTalk.</p>
+          </article>
+          <article class="step-card">
+            <span>04</span>
+            <h3>إتمام النقاش</h3>
+            <p>يتواصل المشتري والبائع بالصوت والفيديو والدردشة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="integration-section" id="about">
+      <div class="container integration-card">
+        <div>
+          <span class="eyebrow">Integration Architecture</span>
+          <h2>موقع سيارات + خدمة MiroTalk ذاتية الاستضافة</h2>
+          <p>
+            هذا النموذج يوضح تكامل تطبيق Marketplace خارجي مع خادم MiroTalk الموجود على Proxmox.
+            موقع السيارات هو التطبيق المستهلك، بينما MiroTalk يعمل كخدمة اتصال Real-Time.
+          </p>
+        </div>
+        <div class="architecture">
+          <div>Marketplace Website</div>
+          <span>→</span>
+          <div>Cloudflare HTTPS</div>
+          <span>→</span>
+          <div>MiroTalk on Proxmox</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div>
+        <strong>MarketCar</strong>
+        <p>مشروع تكامل تجريبي لمساق Network Programming.</p>
+      </div>
+      <p>Prepared by Izz Aldeen Mansour</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="إغلاق">×</button>
+      <span class="eyebrow">بدء اتصال مع البائع</span>
+      <h2 id="modalTitle">تواصل عبر MiroTalk</h2>
+      <p id="modalCarName"></p>
+
+      <label for="buyerName">اسم المشتري</label>
+      <input id="buyerName" type="text" placeholder="اكتب اسمك" maxlength="40" />
+
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="startMeetingBtn">فتح غرفة الاجتماع</button>
+        <button class="btn btn-secondary" data-close-modal>إلغاء</button>
+      </div>
+
+      <small class="modal-note">
+        سيتم فتح رابط MiroTalk في نافذة جديدة. عدّل قيمة
+        <code>MIROTALK_BASE_URL</code> داخل ملف <code>script.js</code> قبل العرض.
+      </small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

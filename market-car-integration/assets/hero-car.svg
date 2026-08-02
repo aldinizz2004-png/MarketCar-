@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#19385d"/>
+    <stop offset="1" stop-color="#0f63e9"/>
+  </linearGradient>
+  <linearGradient id="car" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8eef7"/>
+    <stop offset="1" stop-color="#f7fbff"/>
+  </linearGradient>
+</defs>
+<rect width="800" height="500" rx="34" fill="url(#bg)"/>
+<circle cx="655" cy="85" r="125" fill="#ffffff" opacity=".10"/>
+<ellipse cx="390" cy="385" rx="300" ry="35" fill="#07111f" opacity=".22"/>
+<path d="M150 300 C185 250 245 212 330 202 L520 202 C573 210 620 248 650 300 L690 315 C710 322 725 342 722 365 L718 390 L665 390 C657 343 620 320 575 320 C530 320 495 344 486 390 L314 390 C305 344 270 320 225 320 C180 320 143 343 135 390 L85 390 L80 352 C78 329 95 312 118 307 Z" fill="url(#car)"/>
+<path d="M265 222 L340 222 L340 286 L205 286 C222 260 240 240 265 222Z" fill="#bfe8ff" opacity=".88"/>
+<path d="M365 222 L500 222 C539 229 572 250 596 286 L365 286Z" fill="#bfe8ff" opacity=".88"/>
+<rect x="98" y="310" width="95" height="18" rx="9" fill="#ffffff" opacity=".75"/>
+<rect x="620" y="310" width="75" height="18" rx="9" fill="#ffd36d"/>
+<circle cx="225" cy="390" r="55" fill="#111827"/>
+<circle cx="225" cy="390" r="28" fill="#cbd5e1"/>
+<circle cx="575" cy="390" r="55" fill="#111827"/>
+<circle cx="575" cy="390" r="28" fill="#cbd5e1"/>
+<text x="60" y="76" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">MARKETCAR</text>
+<text x="62" y="112" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" opacity=".8">MarketCar Collection</text>
+</svg>
